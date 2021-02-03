@@ -1,14 +1,14 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Leter to the church",
-  siteShortTitle: "Church Letter", // Used as logo text in header, footer, and splash screen
+  author: "@hashimwarren",
+  siteTitle: "Colossians 3:15",
+  siteShortTitle: "Col 3:15", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "An explanation why we think change needs to happen",
+    "Let the peace of Christ rule in your hearts, since as members of one body you were called to peace.",
   siteUrl: "https://colossians315.com",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Church letter", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "Col 3:15", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
   // -- THEME SETTINGS -----
   colors: {
@@ -41,12 +41,37 @@ module.exports = {
     primary: "Roboto, Arial, sans-serif",
   },
 
-  
+  //-- ARTICLES SECTION SETTINGS -----
+  // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
+  // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
+  mediumRssFeed:
+    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantinmuenster",
+  // rssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss",
+
+  shownArticles: 3,
 
   //-- SOCIAL MEDIA SETTINGS -----
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance
-  
+  socialMedia: [
+    {
+      name: "Linkedin",
+      url: "https://www.linkedin.com/in/konstantin-muenster/",
+    },
+    {
+      name: "Medium",
+      url: "https://konstantinmuenster.medium.com/",
+    },
+    {
+      name: "Github",
+      url:
+        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+    },
+    {
+      name: "Behance",
+      url: "https://www.behance.net/konstanmnster",
+    },
+  ],
 
   //-- NAVIGATION SETTINGS -----
   navLinks: {
